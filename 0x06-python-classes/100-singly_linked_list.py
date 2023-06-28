@@ -78,6 +78,7 @@ class Node:
 creates a singly linked list class object
 """
 
+
 class SinglyLinkedList:
     """
     Represents a singly linked list object.
