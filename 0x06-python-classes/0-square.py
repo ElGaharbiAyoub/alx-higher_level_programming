@@ -6,6 +6,4 @@ class square is empty
 
 class Square:
     pass
-    """
-    creates a square class object
-    """
+    """ creates a square class object """
