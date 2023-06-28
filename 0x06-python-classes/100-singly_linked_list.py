@@ -74,6 +74,7 @@ class Node:
             raise TypeError("next_node must be a Node object")
         self.__next_node = value
 
+
 """
 creates a singly linked list class object
 """
