@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-creates a square class object
+creates a node class object
 """
 
 
