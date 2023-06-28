@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-class square 
+class square is empty
 """
 
 class Square:
