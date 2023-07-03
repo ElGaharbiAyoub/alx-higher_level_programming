@@ -63,7 +63,8 @@ class Rectangle:
         if not self.perimeter():
             return ""
 
-        pattern = [self.print_symbol * self.width for _ in range(self.height)]
+        pattern = ["{}".format(self.print_symbol) *
+                   self.width for _ in range(self.height)]
         return '\n'.join(pattern)
 
     def __repr__(self):
