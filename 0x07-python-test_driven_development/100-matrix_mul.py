@@ -1,25 +1,5 @@
 #!/usr/bin/python3
 def matrix_mul(m_a, m_b):
-    """
-    Multiply two matrices.
-
-    Args:
-        m_a (list):
-        Matrix A represented as a list of lists of integers or floats.
-        m_b (list):
-        Matrix B represented as a list of lists of integers or floats.
-
-    Raises:
-        TypeError:
-        If m_a or m_b is not a list or a list of lists.
-        ValueError:
-        If m_a or m_b is empty or if they cannot be multiplied.
-        TypeError:
-        If an element in m_a or m_b is not an integer or a float.
-        TypeError:
-        If m_a or m_b is not a rectangle (rows not of the same size).
-
-    """
 
     if not isinstance(m_a, list):
         raise TypeError('m_a must be a list')
