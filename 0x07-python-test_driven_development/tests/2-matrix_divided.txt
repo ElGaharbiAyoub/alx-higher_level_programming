@@ -369,3 +369,8 @@ TypeError: matrix must be a matrix (list of lists) of integers/floats
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
+>>> matrix_divided(None, None)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 7, in matrix_divided
+TypeError: 'NoneType' object is not iterable
