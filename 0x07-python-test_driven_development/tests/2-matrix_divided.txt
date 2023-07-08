@@ -118,253 +118,6 @@ TypeError: matrix must be a matrix (list of lists) of integers/floats
 [[0.33, 0.67, 1.0]]
 >>> matrix_divided(matrix, 3.0)
 [[0.33, 0.67, 1.0]]
->>> matrix_divided(matrix, str(3))
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/home/vagrant/holbertonschool-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 69, in matrix_divided
-    raise TypeError("div must be a number")
-TypeError: div must be a number
->>> matrix_divided(matrix, 0)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/home/vagrant/holbertonschool-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 71, in matrix_divided
-    raise ZeroDivisionError("division by zero")
-ZeroDivisionError: division by zero
->>> matrix = [[1.0, 2.0, 3.0]]
->>> matrix_divided(matrix, 3)
-[[0.33, 0.67, 1.0]]
->>> matrix_divided(matrix, 3.0)
-[[0.33, 0.67, 1.0]]
->>> matrix_divided(matrix, str(3))
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/home/vagrant/holbertonschool-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 69, in matrix_divided
-    raise TypeError("div must be a number")
-TypeError: div must be a number
->>> matrix_divided(matrix, 0)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/home/vagrant/holbertonschool-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 71, in matrix_divided
-    raise ZeroDivisionError("division by zero")
-ZeroDivisionError: division by zero
->>> matrix = [[1, 2.0, 3]]
->>> matrix_divided(matrix, 3)
-[[0.33, 0.67, 1.0]]
->>> matrix_divided(matrix, 3.0)
-[[0.33, 0.67, 1.0]]
->>> matrix_divided(matrix, str(3))
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/home/vagrant/holbertonschool-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 69, in matrix_divided
-    raise TypeError("div must be a number")
-TypeError: div must be a number
->>> matrix_divided(matrix, 0)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/home/vagrant/holbertonschool-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 71, in matrix_divided
-    raise ZeroDivisionError("division by zero")
-ZeroDivisionError: division by zero
->>> matrix = [[1, 2.0, "3"]]
->>> matrix_divided(matrix, 3)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/home/vagrant/holbertonschool-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 65, in matrix_divided
-    raise TypeError(s)
-TypeError: matrix must be a matrix (list of lists) of integers/floats
->>> matrix_divided(matrix, 3.0)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/home/vagrant/holbertonschool-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 65, in matrix_divided
-    raise TypeError(s)
-TypeError: matrix must be a matrix (list of lists) of integers/floats
->>> matrix_divided(matrix, str(3))
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/home/vagrant/holbertonschool-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 65, in matrix_divided
-    raise TypeError(s)
-TypeError: matrix must be a matrix (list of lists) of integers/floats
->>> matrix_divided(matrix, 0)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/home/vagrant/holbertonschool-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 65, in matrix_divided
-    raise TypeError(s)
-TypeError: matrix must be a matrix (list of lists) of integers/floats
->>> matrix = [[1, 2, 3], [4, 5, 6]]
->>> matrix_divided(matrix, 3)
-[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
->>> matrix_divided(matrix, 3.0)
-[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
->>> matrix_divided(matrix, str(3))
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/home/vagrant/holbertonschool-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 69, in matrix_divided
-    raise TypeError("div must be a number")
-TypeError: div must be a number
->>> matrix_divided(matrix, 0)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/home/vagrant/holbertonschool-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 71, in matrix_divided
-    raise ZeroDivisionError("division by zero")
-ZeroDivisionError: division by zero
->>> matrix = [[1.0, 2.0, 3.0], [4.0, 5.0, 6.0]]
->>> matrix_divided(matrix, 3)
-[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
->>> matrix_divided(matrix, 3.0)
-[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
->>> matrix_divided(matrix, str(3))
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/home/vagrant/holbertonschool-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 69, in matrix_divided
-    raise TypeError("div must be a number")
-TypeError: div must be a number
->>> matrix_divided(matrix, 0)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/home/vagrant/holbertonschool-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 71, in matrix_divided
-    raise ZeroDivisionError("division by zero")
-ZeroDivisionError: division by zero
->>> matrix = [[1, 2.0, 3], [4.0, 5, 6.0]]
->>> matrix_divided(matrix, 3)
-[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
->>> matrix_divided(matrix, 3.0)
-[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
->>> matrix_divided(matrix, str(3))
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/home/vagrant/holbertonschool-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 69, in matrix_divided
-    raise TypeError("div must be a number")
-TypeError: div must be a number
->>> matrix_divided(matrix, 0)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/home/vagrant/holbertonschool-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 71, in matrix_divided
-    raise ZeroDivisionError("division by zero")
-ZeroDivisionError: division by zero
->>> matrix = [[1, 2.0, "3"], [4, 5.0, "6"]]
->>> matrix_divided(matrix, 3)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/home/vagrant/holbertonschool-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 65, in matrix_divided
-    raise TypeError(s)
-TypeError: matrix must be a matrix (list of lists) of integers/floats
->>> matrix_divided(matrix, 3.0)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/home/vagrant/holbertonschool-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 65, in matrix_divided
-    raise TypeError(s)
-TypeError: matrix must be a matrix (list of lists) of integers/floats
->>> matrix_divided(matrix, str(3))
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/home/vagrant/holbertonschool-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 65, in matrix_divided
-    raise TypeError(s)
-TypeError: matrix must be a matrix (list of lists) of integers/floats
->>> matrix_divided(matrix, 0)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/home/vagrant/holbertonschool-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 65, in matrix_divided
-    raise TypeError(s)
-TypeError: matrix must be a matrix (list of lists) of integers/floats
->>> matrix = [[1, 2, 3], [4, 5, 6, 7]]
->>> matrix_divided(matrix, 3)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/home/vagrant/holbertonschool-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 67, in matrix_divided
-    raise TypeError("Each row of the matrix must have the same size")
-TypeError: Each row of the matrix must have the same size
->>> matrix_divided(matrix, 3.0)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/home/vagrant/holbertonschool-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 67, in matrix_divided
-    raise TypeError("Each row of the matrix must have the same size")
-TypeError: Each row of the matrix must have the same size
->>> matrix_divided(matrix, str(3))
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/home/vagrant/holbertonschool-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 67, in matrix_divided
-    raise TypeError("Each row of the matrix must have the same size")
-TypeError: Each row of the matrix must have the same size
->>> matrix_divided(matrix, 0)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/home/vagrant/holbertonschool-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 67, in matrix_divided
-    raise TypeError("Each row of the matrix must have the same size")
-TypeError: Each row of the matrix must have the same size
->>> matrix = [[1.0, 2.0, 3.0], [4.0, 5.0, 6.0, 7.0]]
->>> matrix_divided(matrix, 3)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/home/vagrant/holbertonschool-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 67, in matrix_divided
-    raise TypeError("Each row of the matrix must have the same size")
-TypeError: Each row of the matrix must have the same size
->>> matrix_divided(matrix, 3.0)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/home/vagrant/holbertonschool-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 67, in matrix_divided
-    raise TypeError("Each row of the matrix must have the same size")
-TypeError: Each row of the matrix must have the same size
->>> matrix_divided(matrix, str(3))
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/home/vagrant/holbertonschool-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 67, in matrix_divided
-    raise TypeError("Each row of the matrix must have the same size")
-TypeError: Each row of the matrix must have the same size
->>> matrix_divided(matrix, 0)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/home/vagrant/holbertonschool-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 67, in matrix_divided
-    raise TypeError("Each row of the matrix must have the same size")
-TypeError: Each row of the matrix must have the same size
->>> matrix = [[1, 2.0, 3], [4.0, 5, 6.0, 7]]
->>> matrix_divided(matrix, 3)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/home/vagrant/holbertonschool-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 67, in matrix_divided
-    raise TypeError("Each row of the matrix must have the same size")
-TypeError: Each row of the matrix must have the same size
->>> matrix_divided(matrix, 3.0)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/home/vagrant/holbertonschool-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 67, in matrix_divided
-    raise TypeError("Each row of the matrix must have the same size")
-TypeError: Each row of the matrix must have the same size
->>> matrix_divided(matrix, str(3))
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/home/vagrant/holbertonschool-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 67, in matrix_divided
-    raise TypeError("Each row of the matrix must have the same size")
-TypeError: Each row of the matrix must have the same size
->>> matrix_divided(matrix, 0)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/home/vagrant/holbertonschool-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 67, in matrix_divided
-    raise TypeError("Each row of the matrix must have the same size")
-TypeError: Each row of the matrix must have the same size
->>> matrix = [[1, 2.0, "3"], [4, 5.0, "6", 7]]
->>> matrix_divided(matrix, 3)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/home/vagrant/holbertonschool-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 65, in matrix_divided
-    raise TypeError(s)
-TypeError: matrix must be a matrix (list of lists) of integers/floats
->>> matrix_divided(matrix, 3.0)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/home/vagrant/holbertonschool-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 65, in matrix_divided
-    raise TypeError(s)
-TypeError: matrix must be a matrix (list of lists) of integers/floats
->>> matrix_divided(matrix, str(3))
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/home/vagrant/holbertonschool-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 65, in matrix_divided
-    raise TypeError(s)
-TypeError: matrix must be a matrix (list of lists) of integers/floats
->>> matrix_divided(matrix, 0)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/home/vagrant/holbertonschool-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 65, in matrix_divided
-    raise TypeError(s)
-TypeError: matrix must be a matrix (list of lists) of integers/floats
 >>> matrix_divided()
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
@@ -374,3 +127,50 @@ Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
   File "<stdin>", line 7, in matrix_divided
 TypeError: 'NoneType' object is not iterable
+>>> matrix_divided([[3,4,6],[1,2,4]], 3333)
+[[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
+>>> matrix_divided([[3,4,6],[1,2,4]], 'w')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>       
+  File "<stdin>", line 14, in matrix_divided
+TypeError: div must be a number
+>>> matrix_divided([[3,4,6],[1,2,4]],)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: matrix_divided() missing 1 required positional argument: 'div'
+>>> matrix_divided([[3,4,6],[1,2]], 3)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 9, in matrix_divided
+TypeError: Each row of the matrix must have the same size
+>>> matrix_divided([[3,4,6],[1,2,7]], 0)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 16, in matrix_divided
+ZeroDivisionError: division by zero
+>>> matrix_divided([[3,4,6],[1,2,7]], -9)
+[[-0.33, -0.44, -0.67], [-0.11, -0.22, -0.78]]
+>>> matrix_divided([[3,4,6],[1,';sdf',7]], 3)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 12, in matrix_divided
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+>>> matrix_divided([[3,4,6]], 3)
+[[1.0, 1.33, 2.0]]
+>>> matrix_divided([[3,4,6],[1,2,4]], 3.2)
+[[0.94, 1.25, 1.88], [0.31, 0.62, 1.25]]
+>>> matrix_divided([[3,4,6],[1,2,4]], -3.2)
+[[-0.94, -1.25, -1.88], [-0.31, -0.62, -1.25]]
+>>> matrix_divided([[-3,-4,-6],[-1,-2,-4]], -3.2)
+[[0.94, 1.25, 1.88], [0.31, 0.62, 1.25]]
+>>> matrix_divided([[-3,-4,-6],[-1,-2,-4],[3,3,3]], -3.2)
+[[0.94, 1.25, 1.88], [0.31, 0.62, 1.25], [-0.94, -0.94, -0.94]]
+>>> matrix_divided([[-3,-4,-6],[-1,-2,-4],[3,3,3]], "ayyyay")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 14, in matrix_divided
+TypeError: div must be a number
+>>> matrix_divided([[3, 9], [12, 15]], -3)
+[[-1.0, -3.0], [-4.0, -5.0]]
+>>> matrix_divided([[3]], 3)
+[[1.0]]
