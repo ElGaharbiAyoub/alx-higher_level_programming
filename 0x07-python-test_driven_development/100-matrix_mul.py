@@ -1,5 +1,9 @@
 #!/usr/bin/python3
+"""wa 3etaa9"""
+
+
 def matrix_mul(m_a, m_b):
+    """ function that multiplies 2 matrices"""
 
     if not isinstance(m_a, list):
         raise TypeError('m_a must be a list')
