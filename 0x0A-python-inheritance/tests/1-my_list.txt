@@ -29,3 +29,8 @@ TypeError: append() takes exactly one argument (0 given)
 >>> my_list.append(-1)
 >>> my_list.print_sorted()
 [-1000, -6, -5, -4, -1, 1000, 5000]
+>>> my_list = MyList(["a", "j", "c"])
+>>> my_list.print_sorted()
+['a', 'c', 'j']
+>>> print(my_list)
+['a', 'j', 'c']
