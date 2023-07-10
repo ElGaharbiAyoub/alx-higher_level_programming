@@ -66,6 +66,24 @@ Traceback (most recent call last):
   File "/mnt/e/ALX_africa/alx-higher_level_programming/0x0A-python-inheritance/7-base_geometry.py", line 17, in integer_validator
     raise TypeError("{} must be an integer".format(name))
 TypeError: property must be an integer
+>>> bg.integer_validator("dict", {"key": "value"})
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/mnt/e/ALX_africa/alx-higher_level_programming/0x0A-python-inheritance/7-base_geometry.py", line 17, in integer_validator
+    raise TypeError("{} must be an integer".format(name))
+TypeError: dict must be an integer
+>>> bg.integer_validator("set", {"hello", "world"})
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/mnt/e/ALX_africa/alx-higher_level_programming/0x0A-python-inheritance/7-base_geometry.py", line 17, in integer_validator     
+    raise TypeError("{} must be an integer".format(name))
+TypeError: set must be an integer
+>>> bg.integer_validator("frozenset", frozenset(["hello", "world"]))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/mnt/e/ALX_africa/alx-higher_level_programming/0x0A-python-inheritance/7-base_geometry.py", line 17, in integer_validator
+    raise TypeError("{} must be an integer".format(name))
+TypeError: frozenset must be an integer
 >>> try:
 ...     bg.integer_validator("name", "John")
 ... except Exception as e:
