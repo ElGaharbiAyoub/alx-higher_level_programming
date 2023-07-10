@@ -66,3 +66,21 @@ Traceback (most recent call last):
   File "/mnt/e/ALX_africa/alx-higher_level_programming/0x0A-python-inheritance/7-base_geometry.py", line 17, in integer_validator
     raise TypeError("{} must be an integer".format(name))
 TypeError: property must be an integer
+>>> try:
+...     bg.integer_validator("name", "John")
+... except Exception as e:
+...     print("[{}] {}".format(e.__class__.__name__, e))
+... 
+[TypeError] name must be an integer
+>>> try:
+...     bg.integer_validator("age", 0)
+... except Exception as e:
+...     print("[{}] {}".format(e.__class__.__name__, e))
+... 
+[ValueError] age must be greater than 0
+>>> try:
+...     bg.integer_validator("distance", -4)
+... except Exception as e:
+...     print("[{}] {}".format(e.__class__.__name__, e))
+... 
+[ValueError] distance must be greater than 0
