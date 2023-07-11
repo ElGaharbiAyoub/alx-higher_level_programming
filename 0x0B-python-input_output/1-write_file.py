@@ -7,8 +7,6 @@ returns the number of characters written
 
 def write_file(filename="", text=""):
     """writes a string"""
-    line = 0
-    with open(filename, mode='w', encoding='utf-8') as f:
-        for line in f:
-            line += 1
-    return line
+    with open(filename, mode='w') as f:
+        f.write(text)
+    return len(text)
