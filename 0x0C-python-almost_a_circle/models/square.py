@@ -29,6 +29,16 @@ class Square(Rectangle):
                 setattr(self, keys[i], arg)
                 i += 1
 
+    def to_dictionary(self):
+        """ returns the dictionary"""
+        dictionary = {
+            'id': self.id,
+            'size': self.size,
+            'x': self.x,
+            'y': self.y
+        }
+        return dictionary
+
     def __str__(self):
         """print"""
         return ("[Rectangle] ({}) {}/{} - {}"
