@@ -1,12 +1,15 @@
 #!/usr/bin/python3
+"""rectongle class"""
 from models.base import Base
 
 
 class Rectangle(Base):
+    """represent rectangle class"""
 
     print_symbol = '#'
 
     def __init__(self, width, height, x=0, y=0, id=None):
+        """initializes"""
         self.width = width
         self.height = height
         self.x = x
@@ -24,17 +27,27 @@ class Rectangle(Base):
             raise ValueError("{} must be >= 0".format(att))
 
     def update(self, *args, **kwargs):
-        """updates attributes"""
+        """updates attributes of square"""
         if args:
             i = 0
-            keys = ['id', 'width', 'height', 'x', 'y']
+            keys = ['id', 'size', 'x', 'y']
             for arg in args:
                 setattr(self, keys[i], arg)
                 i += 1
         elif kwargs:
             for key, value in kwargs.items():
-                if hasattr(self, key):
-                    setattr(self, key, value)
+                setattr(self, key, value)
+
+    def to_dictionary(self):
+        """ returns the dictionary"""
+        dictionary = {
+            'id': self.id,
+            'width': self.width,
+            'height': self.height,
+            'x': self.x,
+            'y': self.y
+        }
+        return dictionary
 
     @property
     def width(self):
