@@ -1,10 +1,14 @@
 #!/usr/bin/python3
+"""class base"""
+
 
 class Base:
+    """class base"""
 
     __nb_objects = 0
 
     def __init__(self, id=None):
+        """initializes"""
         if id is not None:
             self.id = id
         else:
