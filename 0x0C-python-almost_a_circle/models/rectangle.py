@@ -29,7 +29,7 @@ class Rectangle(Base):
         """updates attributes of square"""
         if args:
             i = 0
-            keys = ['id', 'size', 'x', 'y']
+            keys = ['id', 'width', 'height', 'x', 'y']
             for arg in args:
                 setattr(self, keys[i], arg)
                 i += 1
