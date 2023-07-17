@@ -17,7 +17,7 @@ class Rectangle(Base):
         super().__init__(id)
 
     # function thaf, att, value
-    def validator(att, value):
+    def validator(self, att, value):
         """validation of all setter """
         if not isinstance(value, int):
             raise TypeError("{} must be an integer".format(att))

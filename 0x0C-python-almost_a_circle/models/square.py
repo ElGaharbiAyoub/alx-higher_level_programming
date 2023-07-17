@@ -21,14 +21,14 @@ class Square(Rectangle):
         self.width = value
         self.height = value
 
-    def update(self, *args, **kwargs):
-        """updates attributes of square"""
-        if args:
-            i = 0
-            keys = ['id', 'size', 'x', 'y']
-            for arg in args:
-                setattr(self, keys[i], arg)
-                i += 1
+    # def update(self, *args, **kwargs):
+    #     """updates attributes of square"""
+    #     if args:
+    #         i = 0
+    #         keys = ['id', 'size', 'x', 'y']
+    #         for arg in args:
+    #             setattr(self, keys[i], arg)
+    #             i += 1
 
     def to_dictionary(self):
         """ returns the dictionary"""
@@ -42,5 +42,5 @@ class Square(Rectangle):
 
     def __str__(self):
         """print"""
-        return ("[Rectangle] ({}) {}/{} - {}"
+        return ("[Square] ({}) {}/{} - {}"
                 .format(self.id, self.x, self.y, self.size))
