@@ -16,7 +16,8 @@ class Rectangle(Base):
         self.y = y
         super().__init__(id)
 
-    def validator(self, att, value):
+    # function thaf, att, value
+    def validator(att, value):
         """validation of all setter """
         if not isinstance(value, int):
             raise TypeError("{} must be an integer".format(att))
@@ -26,7 +27,7 @@ class Rectangle(Base):
             raise ValueError("{} must be >= 0".format(att))
 
     def update(self, *args, **kwargs):
-        """updates attributes of square"""
+        """updates attributes of rectongle """
         if args:
             i = 0
             keys = ['id', 'width', 'height', 'x', 'y']

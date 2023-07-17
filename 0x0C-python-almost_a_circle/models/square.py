@@ -4,6 +4,7 @@ from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
+    """represent square class"""
 
     def __init__(self, size, x=0, y=0, id=None):
         """initializes"""
@@ -21,7 +22,7 @@ class Square(Rectangle):
         self.height = value
 
     def update(self, *args, **kwargs):
-        """"""
+        """updates attributes of square"""
         if args:
             i = 0
             keys = ['id', 'size', 'x', 'y']
