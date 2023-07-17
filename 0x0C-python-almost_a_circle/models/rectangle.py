@@ -16,7 +16,6 @@ class Rectangle(Base):
         self.y = y
         super().__init__(id)
 
-    # function that validate all setter
     def validator(self, att, value):
         """validation of all setter """
         if not isinstance(value, int):
