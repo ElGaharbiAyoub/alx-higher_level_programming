@@ -60,6 +60,7 @@ class Base:
 
     @classmethod
     def save_to_file_csv(cls, list_objs):
+        """save ti file csv"""
         import csv
 
         try:
