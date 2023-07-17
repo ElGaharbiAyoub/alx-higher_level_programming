@@ -65,7 +65,7 @@ class Base:
 
         try:
             csvs = [x.to_dictionary() for x in list_objs]
-        except:
+        except FileNotFoundError:
             csvs = '[]'
         keys = csvs[0].keys()
         with open(cls.__name__ + '.csv', 'w') as file:
@@ -79,14 +79,16 @@ class Base:
         import csv
         if not os.path.isfile(cls.__name__ + '.csv'):
             return []
-        else:
-            with open(cls.__name__ + '.csv', 'r') as file:
-                reader = csv.DictReader(file)
-                csvs = [row for row in reader]
-                for row in csvs:
-                    for key, val in row.items():
-                        try:
-                            row[key] = int(val)
-                        except:
-                            pass
-            return [cls.create(**dic) for dic in csvs]
+
+        csvs = []
+        with open(cls.__name__ + '.csv', 'r') as file:
+            reader = csv.DictReader(file)
+
+            for row in reader:
+                for key, val in row.items():
+                    try:
+                        row[key] = int(val)
+                    except ValueError:
+                        pass
+                csvs.append(row)
+        return [cls.create(**dic) for dic in csvs]
