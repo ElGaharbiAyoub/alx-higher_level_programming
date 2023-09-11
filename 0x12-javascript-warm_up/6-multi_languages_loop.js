@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-let languages = ["C is fun", "Python is cool", "JavaScript is amazing"];
-for (let lan of languages) {
+const languages = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
+for (const lan of languages) {
   console.log(lan);
 }
