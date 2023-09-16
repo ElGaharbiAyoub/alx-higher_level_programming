@@ -1,7 +1,11 @@
 #!/usr/bin/python3
+"""gets all states via python yee boi
+"""
+
 
 def main(args):
-
+    """gets all state stuff
+    """
     db = MySQLdb.connect(
         host='localhost',
         user=args[1],
@@ -15,7 +19,6 @@ def main(args):
 
 
 if __name__ == "__main__":
-
     import MySQLdb
     import sys
     main(sys.argv)
