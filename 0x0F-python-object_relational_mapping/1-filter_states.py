@@ -1,11 +1,10 @@
 #!/usr/bin/python3
-#!/usr/bin/python3
-"""gets all states via python yee boi
+"""gets all states via python start with N
 """
 
 
 def main(args):
-    """gets all state stuff
+    """gets all state
     """
     db = MySQLdb.connect(
         host='localhost',
