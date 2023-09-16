@@ -17,7 +17,7 @@ def main(args):
         "WHERE name LIKE BINARY %s "
         "ORDER BY id ASC"
     )
-    cur.execute(query,(args[4] + '%',))
+    cur.execute(query, (args[4] + '%',))
     states = cur.fetchall()
     for state in states:
         print(state)
