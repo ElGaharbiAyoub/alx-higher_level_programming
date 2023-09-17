@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Start link class to table in database
+"""
+get state
 """
 import sys
 from model_state import Base, State
@@ -15,9 +16,9 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
     state_name = sys.argv[4]
-    state = session.query(State).filter(State.name == state_name).first()
+    state = session.query(State).filter(State.name == state_name).order_by(State.id).first()
     try:
-        print("{}".format(state.id))
+        print(state.id)
     except:
         print("Nothing")
 
