@@ -17,9 +17,9 @@ if __name__ == "__main__":
     session = Session()
     state_name = sys.argv[4]
     state = session.query(State).filter(State.name == state_name).order_by(State.id).first()
-    try:
+    if state:
         print(state.id)
-    except:
+    else:
         print("Nothing")
 
     session.close()
