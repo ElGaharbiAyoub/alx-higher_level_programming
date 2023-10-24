@@ -13,12 +13,18 @@ request(url, function (error, response, body) {
   } else {
     try {
       const characters = JSON.parse(body).characters;
-      promises = [];
+      const promises = [];
       for (const char of characters) {
         promises.push(
           new Promise(function (resolve, reject) {
             request(char, (err, res, bd) => {
-              resolve(JSON.parse(bd).name);
+              if (err) {
+                console.error('Error:', err);
+              } else if (res.statusCode !== 200) {
+                console.error('Error: Unexpected status code', res.statusCode);
+              } else {
+                resolve(JSON.parse(bd).name);
+              }
             });
           })
         );
